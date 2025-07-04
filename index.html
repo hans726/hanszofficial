@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hansz Official</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="bg-white bg-opacity-80 backdrop-blur-md text-blue-900 py-8 px-4 rounded-b-3xl shadow-lg mx-4 mt-6 md:mx-auto md:max-w-4xl">
+    <h1 class="text-center text-4xl md:text-5xl font-semibold italic drop-shadow-md">
+      Welcome to Hansz Official
+    </h1>
+    <p class="mt-2 text-center text-lg md:text-xl font-light max-w-xl mx-auto">
+      Ini adalah situs web resmi Hansz. Nantikan berita terbarunya!
+    </p>
+  </header>
+
+  <main class="flex-grow container mx-auto px-4 py-10 flex flex-col items-center space-y-10">
+    <img src="assets/logo.jpg" alt="Logo resmi Hansz Official" class="rounded-xl shadow-lg" width="200" height="200" />
+    
+    <section class="w-full max-w-md bg-white bg-opacity-80 backdrop-blur-md rounded-xl shadow-md p-6 text-center">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-700">Ikuti Kami</h2>
+      <div class="flex justify-center space-x-6 text-blue-600">
+        <a href="https://www.youtube.com/feed/you" target="_blank" aria-label="YouTube" class="text-3xl hover:text-blue-800"><i class="fab fa-youtube"></i></a>
+        <a href="https://hanszofficial.blogspot.com/" target="_blank" aria-label="Blog" class="text-3xl hover:text-blue-800"><i class="fas fa-blog"></i></a>
+        <a href="https://www.instagram.com/mhd_subhaan/profilecard/?igsh=MWN5OWltM3Btb3o5aQ==" target="_blank" aria-label="Instagram" class="text-3xl hover:text-blue-800"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@__hansz__?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok" class="text-3xl hover:text-blue-800"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </section>
+
+    <section class="w-full max-w-md bg-white bg-opacity-80 backdrop-blur-md rounded-xl shadow-lg p-6">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-blue-700">Formulir Kontak</h2>
+      <form id="contactForm" class="space-y-6">
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Masukan Nama Anda</label>
+          <input type="text" id="name" name="name" placeholder="Masukan Nama" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+        </div>
+        <div>
+          <label for="gmail" class="block text-gray-700 font-medium mb-2">Masukan Gmail</label>
+          <input type="email" id="gmail" name="gmail" placeholder="Masukan Gmail" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+        </div>
+        <div>
+          <label for="gender" class="block text-gray-700 font-medium mb-2">Jenis Kelamin</label>
+          <select id="gender" name="gender" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+            <option disabled selected value="">Pilih Jenis Kelamin</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-white bg-opacity-80 backdrop-blur-md text-gray-600 py-6 text-center text-sm mx-4 rounded-t-3xl md:mx-auto md:max-w-4xl mb-6 shadow-inner">
+    © 2025 Hansz Official. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

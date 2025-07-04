@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #d5e546 0%, #3b82f6 50%, #72fa60 100%);
+    min-height: 100vh;
+    color: #1e293b;
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
